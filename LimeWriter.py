@@ -11,7 +11,7 @@ class MinimalistTextEditor:
         self.master = master
         self.master.title("Lime Writer")
         self.master.geometry("800x600")
-        master.configure(bg="#3C5921")
+        master.configure(bg="#ffffff")
         self.current_file = None
         self.is_encrypted = False
         self.current_encrypted_data = None 
@@ -78,8 +78,8 @@ class MinimalistTextEditor:
         master.config(menu=menubar)
 
         # File Menu (dropdown) 
-        file_menu = tk.Menu(menubar, tearoff=0, bg="#3C5921", fg="#C7C7C7", 
-                             activebackground="#243514", activeforeground="#C7C7C7") 
+        file_menu = tk.Menu(menubar, tearoff=0, bg="#ffffff", fg="#333333", 
+                             activebackground="#bababa", activeforeground="#333333") 
         menubar.add_cascade(label="File", menu=file_menu)
         file_menu.add_command(label="New", command=self.new_file)
         file_menu.add_command(label="Open", command=self.open_file)
